@@ -1,0 +1,6 @@
+.page-section {
+    &--green {
+        background-color: $mainGreen;
+        color: #fff;
+    }
+}

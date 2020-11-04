@@ -1,0 +1,23 @@
+html {
+    /* Quand on click sur un lien du menu on veut aller vers l'ancre avec un effet lent */
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+@font-face {
+    font-family: 'Khodijah Free';
+    src: url('/assets/styles/fonts/KhodijahFree.eot');
+    src: url('assets/styles/fonts/KhodijahFree.eot?#iefix') format('embedded-opentype'),
+        url('assets/styles/fonts/KhodijahFree.woff2') format('woff2'),
+        url('assets/styles/fonts/KhodijahFree.woff') format('woff'),
+        url('assets/styles/fonts/KhodijahFree.ttf') format('truetype'),
+        url('assets/styles/fonts/KhodijahFree.svg#KhodijahFree') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
