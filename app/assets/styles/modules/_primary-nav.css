@@ -17,19 +17,12 @@
 
     li {
         list-style: none;
-        padding-right: 15px;
-        border-bottom: 1px solid #000;
 
         @mixin atMedium {
             display: inline-block;
             border-bottom: none;
+            padding-right: 15px;
         }
-    }
-
-    li:last-child {
-       /* padding-right: 0;*/
-       border-bottom: none;
-
     }
 
     a {
@@ -38,13 +31,15 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         color: $mainGold;
-        padding: 5px 8px;
+        padding: 12px 0px;
         /*font-size: 1rem;*/
         font-size: 13px; /*convertir en rem*/
         font-weight: 400;
+        border-bottom: 1px solid #ebebeb;
 
+        @mixin atMedium {
+            padding: 5px 8px;
+            border-bottom: none;
+        }
     }
-
-    
-
 }
