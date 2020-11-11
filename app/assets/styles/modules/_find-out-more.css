@@ -1,0 +1,42 @@
+.find-out-more {
+    color: $mainGreen;
+    position: relative;
+    margin-bottom: 30px;
+
+    @mixin atMedium {
+        margin-bottom: 0;
+    }
+
+    &--last {
+        margin-bottom: 0;
+    }
+
+    &__content {
+        background-color: rgba(255, 255, 255, .8);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        margin: 40px;
+        text-align: center;
+    }
+
+    &--btn {
+        
+        position: absolute;
+        bottom: 40px;
+        left:0;
+        right: 0;
+        overflow: visible;
+
+        align-items: flex-end;
+        display: flex;
+        justify-content: center;
+
+        a{
+            text-align: center;
+            
+        }
+    }
+}

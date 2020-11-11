@@ -1,0 +1,21 @@
+.btn {
+    padding: 1.1rem 1.9rem;
+    display: inline-block;
+    background-color: $mainGold;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: white;
+
+    &:hover, &:active {
+        background-color: $mainGreen;
+        transition: background-color 0.2s
+    }
+
+    &--green {
+        background-color: $mainGreen;
+    }
+
+    &--green:hover, &--green:active {
+        background-color: $mainGold;
+    }
+}

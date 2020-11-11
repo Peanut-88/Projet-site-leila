@@ -1,6 +1,17 @@
 .page-section {
+    padding: 1.2rem 0;
+
+    @mixin atMedium {
+        padding: 4.5rem 0;
+    }
+    
     &--green {
         background-color: $mainGreen;
+        color: #fff;
+    }
+
+    &--light-green {
+        background-color: $lightGreen;
         color: #fff;
     }
 }

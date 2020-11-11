@@ -1,0 +1,50 @@
+.primary-nav {
+    padding-top: 0px;
+
+    @mixin atMedium {
+        &--pull-right-at-medium {
+            float: right;
+        }
+    }
+    
+   
+    ul {
+        margin: 0;
+        padding: 0;
+        @mixin clearfix;
+        
+    }
+
+    li {
+        list-style: none;
+        padding-right: 15px;
+        border-bottom: 1px solid #000;
+
+        @mixin atMedium {
+            display: inline-block;
+            border-bottom: none;
+        }
+    }
+
+    li:last-child {
+       /* padding-right: 0;*/
+       border-bottom: none;
+
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $mainGold;
+        padding: 5px 8px;
+        /*font-size: 1rem;*/
+        font-size: 13px; /*convertir en rem*/
+        font-weight: 400;
+
+    }
+
+    
+
+}
