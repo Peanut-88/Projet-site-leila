@@ -12,6 +12,12 @@
         position: fixed;
     }
 
+    &--is-visible {
+        position: fixed;
+        background-color: #fff;
+        height: 100%;
+    }
+
     &__logo { 
         position: relative;
         position: relative;
@@ -50,32 +56,36 @@
     &__menu-content{
         @mixin clearfix{};
         height: 0;
-        z-index: -10;
+        opacity: 0;
+        transition: all .5s ease-out; 
 
         @mixin atMedium {
             background-color: $white;
             height: auto;
             z-index: 1;
             padding-top: 40px;
+            opacity: 1;
         }
 
-        &--is-visible {
+        .site-header--is-visible & {
             height: auto;
-            z-index: 1;
-            
-            
+            opacity: 1;
         }
+
+      
     }
     
     &__btn-container {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
         border-bottom: 1px solid #ebebeb;
+        border-top: 1px solid #ebebeb;
 
         @mixin atMedium {
             padding-top: 0;
             padding-bottom: 0;
             border-bottom: 0;
+            border-top: 0;
             float: right;
         }
 
