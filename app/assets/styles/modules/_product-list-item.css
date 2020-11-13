@@ -1,0 +1,21 @@
+.product-list-item {
+    //background-color: lightgray;
+    width: 100%;
+    text-align: center;
+    //padding: 0 18px 1px 18px;
+
+    margin-bottom: 40px;
+
+    @mixin atMedium{
+        margin-bottom: 0;
+        //padding: 0 1.8125rem 1px 1.8125rem;
+    }
+
+    &--last {
+        margin-bottom: 0;
+    }
+
+    &__price {
+        color: $lightGreen;
+    }
+}

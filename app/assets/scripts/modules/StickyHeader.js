@@ -7,7 +7,7 @@ class StickyHeader {
     }
 
     events() {
-        window.addEventListener("scroll", throttle(() => this.runOnScroll(), 200))
+       // window.addEventListener("scroll", throttle(() => this.runOnScroll(), 200))
         
     }
 

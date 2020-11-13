@@ -1,13 +1,16 @@
 .row {
     @mixin clearfix;
-
-
     margin-bottom: 1rem;
-    
+
     @mixin atMedium {
         &__medium-4{
             float: left;
             width: 33.33%;
+        }
+        
+        &__medium-3{
+            float: left;
+            width: 25%;
         }
     }
 
@@ -15,8 +18,37 @@
         margin-right: -65px;
     }
 
+    &--gutters-small {
+        margin-right: -30px;
+    }
+
     &--gutters > div {
         padding-right: 65px;
+    }
+    
+    &--gutters-small > div {
+        padding-right: 30px;
+    }
+
+    @mixin atMedium {
+        &--gutters-at-medium {
+            margin-right: -65px;
+        }
+
+        &--gutters-at-medium > div {
+            padding-right: 65px;
+        }
+    }
+
+    &--equal-height-at-medium {
+        @mixin atMedium {
+            display: flex;
+        }
+
+        & > div {
+            float: none;
+            display: flex;
+        }
     }
 
 }
