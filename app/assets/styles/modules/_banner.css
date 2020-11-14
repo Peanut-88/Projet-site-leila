@@ -1,0 +1,34 @@
+.banner {/*
+    margin: 0px auto;
+    background: transparent none repeat scroll 0% 0%;
+    padding: 0px;
+    height: 241px;
+    max-height: none;
+    overflow: visible;*/
+    position: relative;
+    overflow: hidden;
+
+    height: 1px;
+    min-height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2C5426;
+    text-align: center;
+
+    @mixin atMedium {   
+        min-height: 176px;
+    }
+
+    &--cream {
+        background-image: url("/assets/images/banner-creme-1100x200.png");
+    }
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+}
+    

@@ -2,6 +2,11 @@
     @mixin clearfix;
     margin-bottom: 1rem;
 
+    &__small-6 {
+        float: left;
+        width: 50%;
+    }
+
     @mixin atMedium {
         &__medium-4{
             float: left;
@@ -30,6 +35,7 @@
         padding-right: 30px;
     }
 
+    
     @mixin atMedium {
         &--gutters-at-medium {
             margin-right: -65px;

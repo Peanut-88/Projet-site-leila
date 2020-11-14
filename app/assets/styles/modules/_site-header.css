@@ -7,7 +7,7 @@
     position: relative;
     width: 100%;
     color: $mainGold;
-
+    border-bottom: 2px solid #eee;
     &--sticky {
         position: fixed;
     }
@@ -34,7 +34,7 @@
         font-size: 0.7em;
         padding-top: 6px;
         color: $mainGold;
-        padding: 25px 0px; 
+        padding: 20px 0px; 
         
         @mixin atMedium {
             float: left;
