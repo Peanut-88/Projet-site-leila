@@ -7,6 +7,10 @@
         width: 50%;
     }
 
+    &--no-b-padding {
+        margin-bottom: 0;
+    }
+
     @mixin atMedium {
         &__medium-4{
             float: left;
