@@ -7,6 +7,12 @@
         margin-bottom: 0;
     }
 
+    &__photo {
+        img {
+            width: 100%;
+        }
+    }
+
     &--last {
         margin-bottom: 0;
     }

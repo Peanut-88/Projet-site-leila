@@ -1,0 +1,11 @@
+.footer-last {
+    & a {
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+            $color: $mainGold;
+        }
+
+    }
+}
