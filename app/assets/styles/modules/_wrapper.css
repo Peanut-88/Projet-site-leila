@@ -6,6 +6,10 @@
     margin-left: auto;
     margin-right: auto;
 
+    &--little-narrow {
+        max-width: 600px;
+    }
+
     &--narrow {
         max-width: 470px;
     }

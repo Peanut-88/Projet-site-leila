@@ -3,5 +3,15 @@
     font-weight: 400;
     color: $mainGold;
 
-    
+    @mixin atMedium {
+        headlinefont-size: 2.875rem;
+    }
+
+    &&--white {
+        color: $white;
+    }
+
+    &&--light {
+        font-weight: 300;
+    }
 }
